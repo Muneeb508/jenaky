@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ShoppingBag, Menu, X, Search } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import classNames from 'classnames';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,8 +36,8 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center justify-center flex-1 md:flex-none md:justify-start">
-            <Link to="/" className="font-serif text-2xl text-jenaky-900 font-bold tracking-wide">
-              JENAKY
+            <Link to="/" className="flex items-center">
+              <Logo className="h-10 w-auto" />
             </Link>
           </div>
 

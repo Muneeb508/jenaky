@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
           
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-serif text-2xl font-bold text-jenaky-900">JENAKY</h3>
+            <Logo className="h-10 w-auto" />
             <p className="text-jenaky-700 text-sm leading-relaxed">
               Elegant fashion for the modern woman. Discover our curated collection of clothes, bags, and purses designed to make you shine.
             </p>
